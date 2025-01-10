@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .header-text{
+    @apply w-full px-3 py-2 rounded-md sm:text-base text-sm font-medium hover:text-sky-400;
+  }
+  .button{
+    @apply w-fit px-4 py-1 text-white font-semibold;
+  }
+}
+
+
+.button-anime::before {
+  content: "";
+  top: -2%; left: -5%;
+  position: absolute; 
+  width: 110%;
+  height: 105%;
+  background-color: rgb(118, 202, 255);
+  animation: move linear infinite 1s;
+  z-index: -1; 
+}
+
+
+@keyframes move {
+  0% {
+    left: -9%;
+  }
+  50% {
+    left: -2%;
+  }
+  100% {
+    left: -9%;
+  }
+}
