@@ -21,12 +21,12 @@ const Home = () => {
             }
       ];
 
+    
+
+
   return (
     <div className=' relative'>
       <Header/>
-      <div className=' absolute top-[10%] left-4 z-20'>
-        <p className=' font-extralight text-4xl text-white'>Company Name</p>
-      </div>
       <Slider slideImages={slideImages}/>
     </div>
   )
